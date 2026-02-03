@@ -1,0 +1,33 @@
+
+<%- include("partials/header.ejs") %>
+
+
+<h1> Posts Hub </h1>
+
+<div class="title-container">
+
+<form action="/submit" method="POST">
+  <input type="text" name="title" placeholder="Post Title" required>
+  <textarea name="content" placeholder="Write your story..." required></textarea>
+  <button type="submit">Publish</button>
+</form>
+</div>
+
+<div class="story-container">
+    <% posts.forEach(post => { %>
+        <div class="publish-container">
+            <h2><%= post.title %></h2>
+            <p><%= post.content %></p>
+            
+            <div>
+                <a href="/edit/<%= post.id %>">Edit</a>
+                
+                <form action="/delete/<%= post.id %>" method="POST" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </div>
+        </div>
+    <% }); %>
+</div>
+
+ <%- include("partials/footer.ejs") %>

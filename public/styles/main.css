@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Center the form */
+.title-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+form {
+    display: inline-block;
+    width: 600px;
+    max-width: 100%;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+/* Green Publish button */
+.title-container button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title-container button:hover {
+    background-color: #45a049;
+}
+
+/* Posts section */
+.story-container {
+    max-width: 800px;
+    margin: 40px auto;
+    flex: 1;
+}
+
+.publish-container {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.publish-container h2 {
+    margin-top: 0;
+}
+
+.publish-container p {
+    color: #666;
+}
+
+/* Edit link */
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Red Delete button */
+.publish-container button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.publish-container button:hover {
+    background-color: #d32f2f;
+}
+
+/* Footer at bottom */
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+    color: #999;
+}

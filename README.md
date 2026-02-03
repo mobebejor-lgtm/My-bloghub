@@ -7,7 +7,7 @@ Posts do not persist between sessions because no database is used in this versio
 
 ✨ Features
 
-Post Creation – Users can create new blog posts.
+Post Creation – Users can create new blog posts.jjjjjjj
 
 Post Viewing – The home page displays all created posts.
 
